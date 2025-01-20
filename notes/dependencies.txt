@@ -1,0 +1,28 @@
+axum
+    ใช้ทำ HTTP Serve
+axum-extra 
+    ส่วนเสริมของ axum โดยเราใช้จัดการกับ Cookie, Header 
+cookie 
+    ทำให้ใช่งานความสามารถจาก cookie function
+async-trait 
+    ทำให้ trait รองรับ async function ได้
+tokio 
+    ใช้สำหรับการทำให้เราเขียน concurrency ในรูปแบบของ async ได้ 
+tower, tower-http
+    ใช้จัดการกับ middleware
+tracing, tracing-subscriber 
+    ใช้ทำ logging
+serde, serde_json 
+    ใช้สำหรับการจัดการ JSON Format
+chrono 
+    ใช้จัดการเรื่อง format เวลา
+diesel 
+    เป็น database client ที่เอาไว้ต่อกับ postgresql ในรูปแบบ orm
+dotenv 
+    ใช้จัดการ .env
+anyhow
+    ใช้จัดการให้การทำ error handling ง่ายขึ้น 
+argon2, rand 
+    ใช้ hash password 
+jsonwebtoken
+    ใช้ทำ jwt token
