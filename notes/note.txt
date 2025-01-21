@@ -1,0 +1,5 @@
+state ใช้สำหรับระบุว่าตอนนี้เราจะใช้ envy ในรูปแบบไหน
+เช่น 
+    1. developnebt
+    2. pre-production
+    3. production
