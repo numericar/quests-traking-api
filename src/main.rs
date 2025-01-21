@@ -1,4 +1,4 @@
-use quests_tracker::config::config_loader;
+use quests_tracker::{config::config_loader, infrastructure::postgres::postgres_connection};
 
 #[tokio::main]
 async fn main() {
@@ -12,6 +12,14 @@ async fn main() {
             std::process::exit(1); // หยุดการำทงานของ application
         }
     };
-
     tracing::info!("Env has been loaded: {:?}", dotenvy_env);
+
+    let postgres_pool = match postgres_connection::establish_connection(&dotenvy_env.database.url) {
+        Ok(pool) => pool,
+        Err(e) => {
+            tracing::error!("Fail to connect to database: {}", e);
+            std::process::exit(1);
+        }
+    };
+    tracing::info!("Database connection successful");
 }

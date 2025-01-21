@@ -1,0 +1,8 @@
+    เข้าไปที่ folder ที่เราต้องการ ใช้คำสั่ง 
+        diesel migration generate <name>
+    โดยเราจะได้รับ up, down สำหรับการรัน sql script
+    ----
+    ไปที่ root ใช้คำสั่ง
+        diesel setup
+    ใช้สำหรับตั้งค่า diesel จากนั้นเราจะต้องเปลี่ยน path ที่ต้องการเก็บ schema.rs และ folder migration ของเรา
+
